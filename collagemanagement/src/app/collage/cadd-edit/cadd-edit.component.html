@@ -1,0 +1,9 @@
+<div>
+    <input type="text" placeholder="College Name" class="form-control" [(ngModel)]="a">
+    <input type="text" placeholder="Location" class="form-control mt-2" [(ngModel)]="b">
+    <input type="text" placeholder="Contact No" class="form-control mt-2" [(ngModel)]="c">
+    <input type="text" placeholder="Email ID" class="form-control mt-2" [(ngModel)]="d">
+
+</div><br>
+<button class="btn btn-outline-primary"  *ngIf="col.c_id==0" (click)="new_col()">Save</button>
+<button class="btn btn-outline-primary" *ngIf="col.c_id!=0" (click)="updatecol()">Update</button>
